@@ -1,5 +1,15 @@
 import turtle
 
+shapes = {
+        "triangle": [3,180],
+        "square": [4,360],
+        "pentagon": [5,540],
+        "hexagon": [6,720],
+        "octagon": [8,1080],
+        "nonagon": [9, 1260],
+
+}
+
 abdul_turtle = turtle.Turtle()
 abdul_turtle.speed(1)
 
