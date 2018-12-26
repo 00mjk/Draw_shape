@@ -8,8 +8,9 @@ shapes = {
         "octagon": [8,1080],
         "nonagon": [9, 1260],
 }
-turtle.setup(1500,1500)
+
 abdul_turtle = turtle.Turtle()
+turtle.setup(1500,1500)
 abdul_turtle.penup()
 abdul_turtle.goto(0,0)
 abdul_turtle.pendown()
