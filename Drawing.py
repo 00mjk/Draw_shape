@@ -21,8 +21,9 @@ def DrawShape( length , shape_drawn , angles_drawn ):
         else:
             abdul_turtle.left(angles_drawn)
 
-user_shape = input("Tell me the name of the shape you want to draw?\n 1)triangle\n 2)square\n 3)pentagon\n 4)hexagon\n 5)octagon\n 6)nonagon")
-user_shape_length = input("Tell me the length of each size?\n")
+user_shape = input("Tell me the name of the shape you want to draw?\n 1)triangle\n 2)square\n 3)pentagon\n 4)hexagon\n 5)octagon\n 6)nonagon\n")
+user_shape_length = float(input("Tell me the length of each size?\n"))
+#user_shape_length = float(user_shape_length)
 
 #this line finds the shape angles by checking with the map
 #uses the shape input from the user
