@@ -7,7 +7,6 @@ shapes = {
         "hexagon": [6,720],
         "octagon": [8,1080],
         "nonagon": [9, 1260],
-
 }
 
 abdul_turtle = turtle.Turtle()
