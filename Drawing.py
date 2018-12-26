@@ -24,9 +24,12 @@ def DrawShape( length , shape_drawn , angles_drawn , numberOfShapes, anglesPerSh
                 break
             else:
                 abdul_turtle.left(angles_drawn)
-
-                #added it with the old angle because it doesn't start from zero
-        abdul_turtle.left(anglesPerShape+angles4shapeBF)
+        #to make the code more effective and skip the final spin
+        if j == (numberOfShapes-1):
+            break
+            #added it with the old angle because it doesn't start from zero
+        else:
+            abdul_turtle.left(anglesPerShape+angles4shapeBF)
 
 
 user_shape = input("Tell me the name of the shape you want to draw?\n 1)triangle\n 2)square\n 3)pentagon\n 4)hexagon\n 5)octagon\n 6)nonagon\n")
