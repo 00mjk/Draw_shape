@@ -12,12 +12,20 @@ shapes = {
 abdul_turtle = turtle.Turtle()
 abdul_turtle.speed(1)
 
-def DrawShape(length,angle_in_shape,num_sides,num_of_shapes):
-    for x in range(num_sides):
+def DrawShape( length , shape_drawn , angles_drawn ):
+    for x in range(shapes[shape_drawn][0]):
         abdul_turtle.forward(length)
-        if x == num_sides-1:
+        #x doesn't need to turn at the end because it got to its final stop
+        if x == (shapes[shape_drawn][0])-1:
             break
         else:
-            abdul_turtle.left(angle_in_shape)
+            abdul_turtle.left(angles_drawn)
 
-DrawShape(100,90,4,0)
+user_shape = input("Tell me the name of the shape you want to draw?\n 1)triangle\n 2)square\n 3)pentagon\n 4)hexagon\n 5)octagon\n 6)nonagon")
+user_shape_length = input("Tell me the length of each size?\n")
+
+#this line finds the shape angles by checking with the map
+#uses the shape input from the user
+angles4shape = (shapes[user_shape][1]/shapes[user_shape][0])
+print(angles4shape)
+DrawShape( user_shape_length , user_shape, angles4shape )
