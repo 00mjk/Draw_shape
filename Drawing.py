@@ -20,7 +20,7 @@ def DrawShape( length , shape_drawn , angles_drawn , numberOfShapes, anglesPerSh
         for x in range(shapes[shape_drawn][0]):
             abdul_turtle.forward(length)
             #x doesn't need to turn at the end because it got to its final stop
-            if x == (shapes[shape_drawn][0])-1:
+            if x == (shapes[shape_drawn][0])-1-25:
                 break
             else:
                 abdul_turtle.left(angles_drawn)
